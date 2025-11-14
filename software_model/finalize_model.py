@@ -43,8 +43,8 @@ import sys
 import pickle
 import lzma
 
-from model import BinarizeFunction
-from get_datasets import get_dataset, get_thresholds
+from .model import BinarizeFunction
+from .get_datasets import get_dataset, get_thresholds
 
 # Computes H3 hash functions for a mapped input or batch of inputs
 @jit(nopython=True)

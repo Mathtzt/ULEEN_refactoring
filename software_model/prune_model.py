@@ -40,9 +40,9 @@ import os
 import sys
 import numpy as np
 
-from model import BackpropWiSARD, BackpropMultiWiSARD
-from get_datasets import get_dataset
-from train_model import train_model, run_inference
+from .model import BackpropWiSARD, BackpropMultiWiSARD
+from .get_datasets import get_dataset
+from .train_model import train_model, run_inference
 
 default_device = "cuda" if torch.cuda.is_available() else "cpu"
 

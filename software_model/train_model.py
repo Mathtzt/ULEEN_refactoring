@@ -43,8 +43,8 @@ import pandas as pd
 
 from time import perf_counter
 
-from model import BackpropWiSARD, BackpropMultiWiSARD
-from get_datasets import get_dataset
+from .model import BackpropWiSARD, BackpropMultiWiSARD
+from .get_datasets import get_dataset
 
 default_device = "cuda" if torch.cuda.is_available() else "cpu"
 
